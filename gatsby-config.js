@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Meu blog pessoal',
   },
-  pathPrefix: "/samuelpinho.github.io",
+  pathPrefix: "/blog",
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
