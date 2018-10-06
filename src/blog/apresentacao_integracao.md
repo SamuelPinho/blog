@@ -1,7 +1,7 @@
 ---
 title: Seminário do Grupo de Processo de Intergração
-date: "2018-04-20"
-tags: ["Fatec", "Outra Tag"]
+date: "2018-10-4"
+tags: ["Fatec", "Gestão de TI"]
 ---
 
 ### O que é Integração?
