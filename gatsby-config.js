@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Meu blog pessoal',
   },
+  pathPrefix: "/samuelpinho.github.io",
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
