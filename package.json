@@ -23,7 +23,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "rm -rf node/modules/gh-pages/.cache && gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
