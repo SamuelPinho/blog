@@ -1,5 +1,5 @@
 ---
-title: Seminário do Grupo de Processo de Intergração
+title: Aula de Redes Neurais
 date: "2018-10-05"
 tags: ["Fatec", "Tópicos"]
 ---
