@@ -1,6 +1,6 @@
 ---
 title: Seminário do Grupo de Processo de Intergração
-date: "2018-10-4"
+date: "2018-10-04"
 tags: ["Fatec", "Gestão de TI"]
 ---
 
