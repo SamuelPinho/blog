@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby';
+import { Link } from 'gatsby';
 
 const Header = ({ siteTitle }) => (
   <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
