@@ -2,13 +2,14 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <div>
-      <h1 style={{ display: 'inline-block', borderBottom: '1px solid' }}>
-        Amazin Pandas Eating Things
+      <h1 className="title">
+        Blog do Samuel Monteiro
       </h1>
-      <h4>{data.allMarkdownRemark.totalCount} Posts </h4>
+
+      <h4 className="subtitle">{data.allMarkdownRemark.totalCount} Posts </h4>
+
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link
@@ -26,6 +27,7 @@ export default ({ data }) => {
           <p>{node.excerpt}</p>
         </div>
       ))}
+
     </div>
   );
 };

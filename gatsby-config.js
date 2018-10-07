@@ -4,6 +4,7 @@ module.exports = {
   },
   pathPrefix: "/blog",
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     {
