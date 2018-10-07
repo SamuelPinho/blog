@@ -25,6 +25,7 @@ const Layout = ({ children, data }) => (
     </div>
 );
 
+
 Layout.propTypes = {
     children: PropTypes.func,
 }

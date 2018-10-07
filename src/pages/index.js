@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-export default ({ data }) => {
+const IndexPage = ({ data }) => {
   return (
     <div>
       <h1 className="title">
@@ -31,6 +31,8 @@ export default ({ data }) => {
     </div>
   );
 };
+
+export default IndexPage;
 
 export const query = graphql`
   query IndexQuery {
