@@ -3,12 +3,21 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 
+import "prismjs/themes/prism.css";
+
 export default ({ data }) => {
     const post = data.markdownRemark;
     return (
         <Layout>
-            <div className="content">
-                <h1>{post.frontmatter.title}</h1>
+            <div className="content box">
+                <h6>
+                    <p className="postpreview-title is-size-1">{post.frontmatter.title}</p>
+                    <small className="has-text-grey">
+                        postado em <strong>{post.frontmatter.date}</strong>
+                    </small>
+                </h6>
+                <p className="has-text-grey">{post.frontmatter.description}</p>
+                <hr />
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
         </Layout>
@@ -22,6 +31,9 @@ export const query = graphql`
             frontmatter {
                 tags
                 title
+                date(formatString: "DD MMMM, YYYY", locale:"pt-br")
+                categorias
+                description
             }
         }
     }

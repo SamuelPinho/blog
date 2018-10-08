@@ -1,7 +1,9 @@
 ---
 title: Seminário do Grupo de Processo de Intergração
 date: "2018-10-04"
-tags: ["Fatec", "Gestão de TI"]
+tags: ["Gestão de Projetos"]
+categorias: ["Faculdade"]
+description: Estudos sobre o grupo de processo de Integração do PMBOK para a apresentação do seminário de Gestão de Projetos
 ---
 
 ### O que é Integração?

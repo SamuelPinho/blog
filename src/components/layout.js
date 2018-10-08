@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql, StaticQuery } from 'gatsby';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 // bulma css
 import '../layouts/index.scss';
-import '../layouts/utils.scss';
 
 // components
 import Header from './header';
+import Footer from './footer';
+
+library.add(fab);
 
 const Layout = ({ children }) => (
     <StaticQuery
@@ -17,6 +21,10 @@ const Layout = ({ children }) => (
                 site {
                     siteMetadata {
                         title
+                        links { 
+                            github
+                            linkedin
+                        }
                     }
                 }
             }
@@ -33,11 +41,18 @@ const Layout = ({ children }) => (
 
                 <Header siteTitle={data.site.siteMetadata.title} />
 
-                <section className="section">
+                <section className="section has-background-light has-navbar-fixed-top">
                     <div className="container">
-                        {children}
+                        <div className="columns">
+                            <div className="column is-8 is-mobile is-offset-2">
+                                {children}
+                            </div>
+                        </div>
                     </div>
                 </section>
+
+                <Footer links={data.site.siteMetadata.links} />
+
             </div>
         )}
     />

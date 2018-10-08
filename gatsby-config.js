@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Samuel Monteiro',
+    links: {
+      github: 'https://github.com/SamuelPinho/blog',
+      linkedin: 'https://www.linkedin.com/in/samuelmpinho/'
+    },
   },
   pathPrefix: "/blog",
   plugins: [
@@ -8,6 +12,17 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     {
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: "language-",
+              showLineNumbers: true,
+            }
+          }
+        ],
+      },
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',

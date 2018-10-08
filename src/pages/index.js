@@ -1,25 +1,13 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout';
+import PostPreview from '../components/postPreview';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <h4 className="subtitle">{data.allMarkdownRemark.totalCount} Posts </h4>
-
     {data.allMarkdownRemark.edges.map(({ node }) => (
-      <div key={node.id}>
-        <Link to={node.fields.slug}>
-          <h3>
-            {node.frontmatter.title}{" "}
-            <span> - {node.frontmatter.date}</span>
-            {node.frontmatter.tags.map((tag, index) => (
-              <span key={index}> - {tag}</span>
-            ))}
-          </h3>
-        </Link>
-        <p>{node.excerpt}</p>
-      </div>
+      <PostPreview data={node} />
     ))}
 
   </Layout>
@@ -37,12 +25,14 @@ export const query = graphql`
           frontmatter {
             tags
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM, YYYY", locale:"pt-br")
+            categorias
+            description
           }
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength: 290)
         }
       }
     }
