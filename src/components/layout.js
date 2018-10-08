@@ -21,10 +21,7 @@ const Layout = ({ children }) => (
                 site {
                     siteMetadata {
                         title
-                        links { 
-                            github
-                            linkedin
-                        }
+                        links { ... }
                     }
                 }
             }
