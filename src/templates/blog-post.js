@@ -11,11 +11,19 @@ export default ({ data }) => {
         <Layout>
             <div className="content box">
                 <h6>
-                    <p className="postpreview-title is-size-1">{post.frontmatter.title}</p>
+                    <p className="postpreview-title is-size-3">{post.frontmatter.title}</p>
                     <small className="has-text-grey">
                         postado em <strong>{post.frontmatter.date}</strong>
                     </small>
                 </h6>
+                <div className="tags postpreview-tags">
+                    {post.frontmatter.categorias.map((tag, index) => (
+                        <span className="tag is-info is-medium" key={index}>{tag}</span>
+                    ))}
+                    {post.frontmatter.tags.map((tag, index) => (
+                        <span className="tag is-medium" key={index}>{tag}</span>
+                    ))}
+                </div>
                 <p className="has-text-grey">{post.frontmatter.description}</p>
                 <hr />
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />

@@ -13,3 +13,7 @@ Falo sobre **desenvolvimento**, as **aulas que tenho na faculdade**, e qualquer 
 * [Powered by GatsbyJs](https://www.gatsbyjs.org/)
 
 * [Default Gatsby starter](https://github.com/gatsbyjs/gatsby-starter-default)
+
+    <a href="https://bulma.io">
+  <img src="./src/images/made-with-bulma.png    " alt="Made with Bulma" width="128" height="24">
+</a>

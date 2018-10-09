@@ -3,7 +3,8 @@ module.exports = {
     title: 'Samuel Monteiro',
     links: {
       github: 'https://github.com/SamuelPinho/blog',
-      linkedin: 'https://www.linkedin.com/in/samuelmpinho/'
+      linkedin: 'https://www.linkedin.com/in/samuelmpinho/',
+      medium: 'https://medium.com/@samuelmonteiro',
     },
   },
   pathPrefix: "/blog",

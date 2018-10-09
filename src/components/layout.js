@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { graphql, StaticQuery } from 'gatsby';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 // bulma css
 import '../layouts/index.scss';
@@ -12,7 +13,7 @@ import '../layouts/index.scss';
 import Header from './header';
 import Footer from './footer';
 
-library.add(fab);
+library.add(fab, faCalendarAlt);
 
 const Layout = ({ children }) => (
     <StaticQuery
@@ -21,9 +22,10 @@ const Layout = ({ children }) => (
                 site {
                     siteMetadata {
                         title
-                        links { 
+                        links {
                             github
                             linkedin
+                            medium
                         }
                     }
                 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const PostPreview = ({ data }) => (
     <div className="box" key={data.id}>
@@ -12,9 +13,13 @@ const PostPreview = ({ data }) => (
                         </Link>
                         <small className="has-text-grey">
                             postado em <strong>{data.frontmatter.date}</strong>
+                            <span className="icon">
+                                <FontAwesomeIcon icon='calendar-alt' size="" />
+                            </span>
                         </small>
                         <br />
                         <p className="postpreview-content is-size-5">
+
                             {data.frontmatter.description}
                         </p>
                         <p className="postpreview-readmore is-size-5">
