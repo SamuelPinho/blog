@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = ({ links }) => (
     <footer className="footer fixed-footer">
         <div className="content has-text-centered">
-            Samuel Monteiro Pinho
+            <p>Samuel Monteiro Pinho</p>
             <div className="content">
-                <span className="icon is-large">
-                    <a href={links.github}>
+                <span className="icon is-large" >
+                    <a href={links.github} >
                         <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
                     </a>
                 </span>
@@ -18,7 +18,7 @@ const Footer = ({ links }) => (
                 </span>
                 <span className="icon is-large">
                     <a href={links.medium}>
-                        <FontAwesomeIcon icon={['fab', 'medium']} size="2x" />
+                        <FontAwesomeIcon icon={['fab', 'medium-m']} size="2x" />
                     </a>
                 </span>
             </div>

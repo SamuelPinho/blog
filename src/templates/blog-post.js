@@ -16,6 +16,7 @@ export default ({ data }) => {
                         postado em <strong>{post.frontmatter.date}</strong>
                     </small>
                 </h6>
+                <p className="has-text-grey">{post.frontmatter.description}</p>
                 <div className="tags postpreview-tags">
                     {post.frontmatter.categorias.map((tag, index) => (
                         <span className="tag is-info is-medium" key={index}>{tag}</span>
@@ -24,8 +25,7 @@ export default ({ data }) => {
                         <span className="tag is-medium" key={index}>{tag}</span>
                     ))}
                 </div>
-                <p className="has-text-grey">{post.frontmatter.description}</p>
-                <hr />
+                <hr className="post-divider" />
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
         </Layout>

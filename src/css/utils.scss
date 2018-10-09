@@ -39,6 +39,18 @@
     }
 }
 
+// Post
+.post-divider {
+    margin-top: 0rem;
+}
+
+// Navbar
+.navbar-item.navbar-center {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
 // Others
 .tag:not(body).is-medium {
     font-size: .8rem !important;

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Samuel Monteiro',
     links: {
-      github: 'https://github.com/SamuelPinho/blog',
+      github: 'https://github.com/SamuelPinho',
       linkedin: 'https://www.linkedin.com/in/samuelmpinho/',
       medium: 'https://medium.com/@samuelmonteiro',
     },

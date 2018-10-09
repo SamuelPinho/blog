@@ -7,7 +7,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 // bulma css
-import '../layouts/index.scss';
+import '../css/index.scss';
 
 // components
 import Header from './header';
@@ -41,9 +41,9 @@ const Layout = ({ children }) => (
                     ]}
                 />
 
-                <Header siteTitle={data.site.siteMetadata.title} />
+                <Header siteTitle={data.site.siteMetadata.title} links={data.site.siteMetadata.links} />
 
-                <section className="section has-background-light has-navbar-fixed-top">
+                <section className="section has-background-light">
                     <div className="container">
                         <div className="columns">
                             <div className="column is-8 is-mobile is-offset-2">
