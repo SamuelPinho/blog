@@ -18,7 +18,7 @@ const Footer = ({ links }) => (
                 </span>
                 <span className="icon is-large">
                     <a href={links.medium}>
-                        <FontAwesomeIcon icon={['fab', 'medium-m']} size="2x" />
+                        <FontAwesomeIcon icon={['fab', 'medium']} size="2x" />
                     </a>
                 </span>
             </div>
