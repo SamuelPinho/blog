@@ -9,8 +9,6 @@ Taken from https://bulma.io/documentation/overview/customize/
 // Update blue
 // $blue: #72d0eb;
 // Add pink and its invert
-// $pink: #ffb3b3;
-// $pink-invert: #fff;
 // Add a serif family
 // $family-serif: "Merriweather", "Georgia", serif;
 // 3. Set the derived variables
@@ -29,13 +27,17 @@ Taken from https://bulma.io/documentation/overview/customize/
 // $github: #333;
 // $github-invert: findColorInvert($github);
 // 5. Add new color variables to the color map.
+$box-radius: 14px;
+$box-padding: 2.5rem;
+$box-shadow: 8px 14px 38px rgba(39, 44, 49, .06),
+1px 3px 8px rgba(39, 44, 49, .03);
+$github: rgba(110, 84, 148, 1);
+$linkedin: rgba(0, 118, 181, .8);
+$linkedin-invert: findColorInvert($linkedin);
+$github-invert: findColorInvert($github);
 @import "~bulma/sass/utilities/derived-variables.sass";
-// $addColors: (
-//   "twitter":($twitter, $twitter-invert),
-//   "linkedin": ($linkedin, $linkedin-invert),
-//   "github": ($github, $github-invert)
-// );
-// $colors: map-merge($colors, $addColors);
+$addColors: ( "linkedin": ($linkedin, $linkedin-invert), "github": ($github, $github-invert), );
+$colors: map-merge($colors, $addColors);
 // import utils
 @import "./utils.scss";
 // 6. Import the rest of Bulma

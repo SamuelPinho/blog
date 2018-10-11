@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = ({ siteTitle, links }) => (
-  <nav className="navbar is-light" role="navigation" aria-label="main navigation">
+  <nav className="navbar is-white" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
       <Link className="navbar-item navbar-center" to="/">
         {siteTitle}
@@ -11,25 +11,25 @@ const Header = ({ siteTitle, links }) => (
     </div>
 
     <div className="navbar-menu">
-      <div className="navbar-start">
+      <div className="navbar-end">
         <div className="navbar-item">
           <div className="buttons">
 
-            <a className="button is-white" href={links.github}>
+            <a className="button is-text" href={links.github}>
               <span className="icon" >
                 <FontAwesomeIcon icon={['fab', 'github']} />
               </span>
               <span>GitHub</span>
             </a>
 
-            <a className="button is-white" href={links.linkedin}>
+            <a className="button is-text" href={links.linkedin}>
               <span className="icon" >
                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
               </span>
               <span>Linkedin</span>
             </a>
 
-            <a className="button is-white" href={links.medium}>
+            <a className="button is-text" href={links.medium}>
               <span className="icon" >
                 <FontAwesomeIcon icon={['fab', 'medium-m']} />
               </span>

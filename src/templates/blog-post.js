@@ -1,5 +1,6 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Layout from '../components/layout';
 
@@ -27,6 +28,13 @@ export default ({ data }) => {
                 </div>
                 <hr className="post-divider" />
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <hr />
+                <Link to="/" className="button is-white">
+                    <span className="icon" >
+                        <FontAwesomeIcon icon='chevron-left' />
+                    </span>
+                    <span>Voltar para página inicial</span>
+                </Link>
             </div>
         </Layout>
     );
@@ -34,15 +42,15 @@ export default ({ data }) => {
 
 export const query = graphql`
     query BlogPostQuery($slug: String!) {
-        markdownRemark(fields: { slug: {eq: $slug } }) {
-            html
+                markdownRemark(fields: {slug: {eq: $slug } }) {
+                html
             frontmatter {
                 tags
                 title
-                date(formatString: "DD MMMM, YYYY", locale:"pt-br")
-                categorias
-                description
-            }
+            date(formatString: "DD MMMM, YYYY", locale:"pt-br")
+            categorias
+            description
         }
     }
+}
 `;

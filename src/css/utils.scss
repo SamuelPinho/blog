@@ -44,6 +44,11 @@
     margin-top: 0rem;
 }
 
+// Post Preview
+.box:not(:last-child) {
+    margin-bottom: 3rem !important;
+}
+
 // Navbar
 .navbar-item.navbar-center {
     flex-grow: 1;
@@ -51,26 +56,25 @@
     justify-content: center;
 }
 
+// Footer
+.footer {
+    padding-top: 3rem !important;
+    padding-bottom: 1rem !important;
+}
+
 // Others
 .tag:not(body).is-medium {
-    font-size: .8rem !important;
+    font-size: 1rem !important;
 }
 
 section.has-navbar-fixed-top {
     margin-top: 2rem;
 }
 
-.content .tag,
-.content .number {
-    display: inline;
-    padding: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    text-align: inherit;
-    vertical-align: inherit;
-    border-radius: inherit;
-    font-weight: inherit;
-    white-space: inherit;
-    background: inherit;
-    margin: inherit;
+.grow {
+    transition: all .3s ease;
+}
+
+.grow:hover {
+    transform: scale(1.02);
 }

@@ -3,13 +3,13 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const PostPreview = ({ data }) => (
-    <div className="box" key={data.id}>
+    <div className="box grow" key={data.id}>
         <article className="media">
             <div className="media-content">
                 <div className="content">
                     <p>
                         <Link to={data.fields.slug}>
-                            <h3 className="postpreview-title is-link">{data.frontmatter.title}</h3>
+                            <h1 className="postpreview-title is-link">{data.frontmatter.title}</h1>
                         </Link>
                         <small className="has-text-grey">
                             postado em <strong>{data.frontmatter.date}</strong>
