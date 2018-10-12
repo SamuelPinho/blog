@@ -10,8 +10,8 @@ import { faCalendarAlt, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import '../css/index.scss';
 
 // components
-import Header from './header';
-import Footer from './footer';
+import Header from './Header';
+import Footer from './Footer';
 
 library.add(fab, faCalendarAlt, faChevronLeft);
 

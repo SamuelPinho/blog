@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import PostTitle from '../components/shared/PostTitle';
 import CategoriesAndTags from '../components/shared/CategoriesAndTags';
 
