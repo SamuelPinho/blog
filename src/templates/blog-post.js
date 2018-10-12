@@ -3,6 +3,8 @@ import { Link, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Layout from '../components/layout';
+import PostTitle from '../components/shared/PostTitle';
+import CategoriesAndTags from '../components/shared/CategoriesAndTags';
 
 import "prismjs/themes/prism.css";
 
@@ -10,24 +12,17 @@ export default ({ data }) => {
     const post = data.markdownRemark;
     return (
         <Layout>
-            <div className="content box">
-                <h6>
-                    <p className="postpreview-title is-size-3">{post.frontmatter.title}</p>
-                    <small className="has-text-grey">
-                        postado em <strong>{post.frontmatter.date}</strong>
-                    </small>
-                </h6>
-                <p className="has-text-grey">{post.frontmatter.description}</p>
-                <div className="tags postpreview-tags">
-                    {post.frontmatter.categorias.map((tag, index) => (
-                        <span className="tag is-info is-medium" key={index}>{tag}</span>
-                    ))}
-                    {post.frontmatter.tags.map((tag, index) => (
-                        <span className="tag is-medium" key={index}>{tag}</span>
-                    ))}
+            <div className="box">
+                <div className="content">
+                    <PostTitle data={post} />
+                    <p className="has-text-grey postpreview-content">{post.frontmatter.description}</p>
+
+                    <CategoriesAndTags data={post} />
+
+                    <hr className="post-divider" />
+                    <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 </div>
-                <hr className="post-divider" />
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
                 <hr />
                 <Link to="/" className="button is-white">
                     <span className="icon" >
@@ -42,11 +37,11 @@ export default ({ data }) => {
 
 export const query = graphql`
     query BlogPostQuery($slug: String!) {
-                markdownRemark(fields: {slug: {eq: $slug } }) {
-                html
-            frontmatter {
-                tags
-                title
+        markdownRemark(fields: {slug: {eq: $slug } }) {
+        html
+        frontmatter {
+            tags
+            title
             date(formatString: "DD MMMM, YYYY", locale:"pt-br")
             categorias
             description
