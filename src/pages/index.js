@@ -7,7 +7,7 @@ import PostPreview from '../components/PostPreview';
 const IndexPage = ({ data }) => (
   <Layout>
     {data.allMarkdownRemark.edges.map(({ node }) => (
-      <PostPreview data={node} />
+      <PostPreview data={node} key={node.id} />
     ))}
 
   </Layout>
