@@ -1,8 +1,7 @@
 ---
 title: Sistemas Especialistas
 date: "2018-10-10"
-tags: ["Inteligência Artificial"]
-categorias: ["Faculdade"]
+tags: ["Faculdade", "Inteligência Artificial"]
 description: "Explicação sobre o que são sistemas especialistas. Para o que eles servem. O que fazem. Como fazem. Do que são compostos." 
 ---
 

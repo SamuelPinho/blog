@@ -26,7 +26,6 @@ export const query = graphql`
             tags
             title
             date(formatString: "DD MMMM, YYYY", locale:"pt-br")
-            categorias
             description
           }
           fields {

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Layout from '../components/Layout';
 import PostTitle from '../components/shared/PostTitle';
-import CategoriesAndTags from '../components/shared/CategoriesAndTags';
+import Tags from '../components/shared/Tags';
 
 import "prismjs/themes/prism.css";
 
@@ -17,7 +17,7 @@ export default ({ data }) => {
                     <PostTitle data={post} />
                     <p className="has-text-grey postpreview-content">{post.frontmatter.description}</p>
 
-                    <CategoriesAndTags data={post} />
+                    <Tags data={post} />
 
                     <hr className="post-divider" />
                     <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -43,7 +43,6 @@ export const query = graphql`
             tags
             title
             date(formatString: "DD MMMM, YYYY", locale:"pt-br")
-            categorias
             description
         }
     }

@@ -1,8 +1,7 @@
 ---
 title: Introdução ao ITIL
 date: "2018-10-08"
-tags: ["Gestão de TI"]
-categorias: ["Faculdade"]
+tags: ["Faculdade", "Gestão de TI"]
 description: "Introdução à metodologia do ITIL que tem como objetivo melhorar a qualidade dos serviços de TI prestados, através das melhores práticas do mercado" 
 ---
 
