@@ -1,0 +1,1 @@
+{"errors":[{"message":"Variable \"$slug\" is not defined by operation \"TagsQuery\".","locations":[{"line":4,"column":38},{"line":1,"column":1}]},{"message":"Variable \"$tag\" is never used in operation \"TagsQuery\".","locations":[{"line":2,"column":3}]}],"pageContext":{"tag":"Tópicos"}}
