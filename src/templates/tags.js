@@ -8,10 +8,17 @@ const Tags = ({ pageContext, data }) => {
         <Layout >
             <div className="box">
                 <div className="content">
-                    <h1># {pageContext.tag}</h1>
-                    {data.allMarkdownRemark.edges.map(({ node }, index) => (
-                        <Link to={node.fields.slug}>{node.fields.slug}</Link>
-                    ))}
+                    <h2>Postagens sobre {pageContext.tag}</h2>
+                    <hr />
+                    <ul>
+                        {data.allMarkdownRemark.edges.map(({ node }, index) => (
+                            <li className="is-size-5">
+                                <Link to={node.fields.slug}>
+                                    {node.frontmatter.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </Layout>
@@ -27,6 +34,9 @@ export const query = graphql`
                 node {
                     fields {
                         slug
+                    }
+                    frontmatter {
+                        title
                     }
                 }
             }

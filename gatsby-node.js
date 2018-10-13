@@ -54,8 +54,6 @@ exports.createPages = ({ graphql, actions }) => {
 
                 _.uniq(tags);
 
-                console.log(tags);
-
                 tags.forEach((tag) => {
                     createPage({
                         path: `/tag/${tag}`,
