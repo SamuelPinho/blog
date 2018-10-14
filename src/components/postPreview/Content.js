@@ -6,6 +6,7 @@ import PostTitle from '../shared/PostTitle';
 const Content = ({ data }) => (
     <div className="content">
         <PostTitle data={data} />
+
         <p className="postpreview-content is-size-5">
             {data.frontmatter.description}
         </p>

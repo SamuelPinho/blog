@@ -18,7 +18,7 @@ const PostTitle = ({ data }) => {
         <div className="has-text-grey">
             {title}
             <small className="has-text-grey">
-                postado em <strong> {data.frontmatter.date}</strong>
+                {data.frontmatter.date}
                 <span className="icon">
                     <FontAwesomeIcon icon='calendar-alt' />
                 </span>

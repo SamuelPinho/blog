@@ -4,10 +4,10 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout';
 import PostPreview from '../components/PostPreview';
 
-const IndexPage = ({ data }) => (
+const DraftsPage = ({ data }) => (
   <Layout>
     {data.allMarkdownRemark.edges.map(({ node }) => {
-      if (!node.fields.slug.includes('/drafts')) {
+      if (node.fields.slug.includes('/drafts')) {
         return <PostPreview data={node} key={node.id} />
       }
       return null
@@ -16,12 +16,11 @@ const IndexPage = ({ data }) => (
   </Layout>
 );
 
-export default IndexPage;
+export default DraftsPage;
 
 export const query = graphql`
-  query IndexQuery {
+  query DraftsQuery {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
       edges {
         node {
           id
