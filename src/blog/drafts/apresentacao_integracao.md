@@ -1,7 +1,7 @@
 ---
 title: Grupo de Processo de Intergração do PMBOK
 date: "2018-10-04"
-tags: ["Faculdade", "Gestão de Projetos"]
+tags: ["Faculdade", "Gestão de Projetos", "Metodologia"]
 description: Estudos sobre o grupo de processo de Integração do PMBOK para a apresentação do seminário de Gestão de Projetos
 ---
 

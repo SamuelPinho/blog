@@ -1,7 +1,7 @@
 ---
 title: Aula de Redes Neurais
 date: "2018-10-05"
-tags: ["Faculdade", "Tópicos"]
+tags: ["Faculdade", "Tópicos", "Python"]
 description: Relatório da aula de Tópicos onde foi dada uma introdução sobre o conceito de redes neurais e uma implementação simples em python
 ---
 

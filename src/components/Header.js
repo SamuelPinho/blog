@@ -12,9 +12,6 @@ const Header = ({ siteTitle, links }) => (
 
     <div className="navbar-menu">
       <div className="navbar-start">
-        <Link className="navbar-item" to='/tags'>
-          Tags
-        </Link>
         <Link className="navbar-item" to='/drafts'>
           Rascunhos
         </Link>
