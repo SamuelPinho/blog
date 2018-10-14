@@ -13,7 +13,7 @@ export default ({ data }) => {
     return (
         <Layout>
             <div className="box">
-                <div className="content">
+                <div className="content has-text-grey">
                     <PostTitle data={post} />
                     <p className="has-text-grey postpreview-content">{post.frontmatter.description}</p>
 

@@ -1,5 +1,5 @@
 ---
-title: Seminário do Grupo de Processo de Intergração
+title: Grupo de Processo de Intergração do PMBOK
 date: "2018-10-04"
 tags: ["Faculdade", "Gestão de Projetos"]
 description: Estudos sobre o grupo de processo de Integração do PMBOK para a apresentação do seminário de Gestão de Projetos
@@ -63,6 +63,7 @@ Opinião de Especialistas, Coleta de dados, Habilidades Interpessoais e de Equip
 Plano de Gerenciamento do Projeto
 
 ### 3. Orientar e Gerenciar o Trabalho do Projeto
+É basicamente, o processo de liderar e realizar o que ficou definido no plano de gerenciamento de projeto, além de implementar as mudanças para atingir os objetivos do projeto.
 
 **Recebemos**
 

@@ -15,7 +15,7 @@ const PostTitle = ({ data }) => {
     }
 
     return (
-        <div>
+        <div className="has-text-grey">
             {title}
             <small className="has-text-grey">
                 postado em <strong> {data.frontmatter.date}</strong>

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = ({ siteTitle, links }) => (
-  <nav className="navbar is-white" role="navigation" aria-label="main navigation">
+  <nav className="navbar is-white has-text-grey" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
       <Link className="navbar-item navbar-center" to="/">
         {siteTitle}
@@ -11,6 +11,11 @@ const Header = ({ siteTitle, links }) => (
     </div>
 
     <div className="navbar-menu">
+      <div className="navbar-start">
+        <Link className="navbar-item" to='/tags'>
+          Tags
+        </Link>
+      </div>
       <div className="navbar-end">
         <div className="navbar-item">
           <div className="buttons">
