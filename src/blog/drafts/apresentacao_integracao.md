@@ -5,7 +5,7 @@ tags: ["Faculdade", "Gestão de Projetos", "Metodologia"]
 description: Estudos sobre o grupo de processo de Integração do PMBOK para a apresentação do seminário de Gestão de Projetos
 ---
 
-> Vai da página  até 164
+> Vai da página 105 até 164
 
 ## O que é Integração?
 **É o grupo responsável pela unificação, integração e funcionamento, de acordo com o plano, de todos os outros grupos.**
