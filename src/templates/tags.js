@@ -7,6 +7,10 @@ import PostPreview from '../components/PostPreview';
 const Tags = ({ pageContext, data }) => {
     return (
         <Layout >
+            <h1 className="is-size-2 has-text-weight-bold">
+                # {pageContext.tag}
+            </h1>
+            <br />
             {data.allMarkdownRemark.edges.map(({ node }, index) => {
                 if (!node.fields.slug.includes('/drafts')) {
                     return <PostPreview data={node} key={node.id} />;
