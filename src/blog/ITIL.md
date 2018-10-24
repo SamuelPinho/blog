@@ -74,6 +74,48 @@ mão de obra operacional para entrega dos serviços.
 
 ---
 ### 2. Gerencial/Entrega de Serviços
-mais entendido como consulta de dados.
+Mais entendido como consulta de dados.
 
-*Exemplo: preciso de uma informação referente ao preço do notebook x.*
+*Exemplo: preciso de uma informação referente ao preço do notebook x*
+
+Analisam o ambiente para **prover informações para a Central de Serviço**
+
+#### Objetivos
+- Equilibrio entre demanda e capacidade
+- Melhoria continua da qualidade do serviço
+- Gerar KPIs
+
+> O contrato entre as empresas deve verificar os acordos de níveis de serviço para definição de prioridades.
+
+#### Responsabilidades (Varia conforme o tipo de serviço)
+  - Manter os documentos a seguir:
+    - Catálogo de Serviços
+    - Acordo de Nível de Serviço
+
+#### 1. Gerenciamento de Responsabilidades
+
+**Objetivo** Garantir que os serviços sejam entregues com base no acordo entre a organização de TI e os clientes.
+
+**Responsabilidades** Produzir um plano de disponibilidades; gerar KPI para monitorar os níveis de disponbilidade para garantir os ANSs e ANOs; 
+
+#### 2. Gerenciamento da Capacidade
+**Objetivo** Garantir que a capacidade de processamento e amrazenamentos do serviços fornecidos acompanhem as demandas do negócio de maneira efetiva.
+
+**Responsabilidade**
+Gerenciar a capacidade do negócio, do serviço oferecido e dos recursos. 
+
+#### 3. Gerenciamento Financeiro
+
+**Objetivo**
+Administar os recursos monetários da TI para fins de organização, como por exemplo, dimensionar o custo da TI.
+
+**Responsabilidade**
+Prever o orçamento, verificar como o dinheiro foi gasto e cobrar o cliente sobre o pagamento(faturar).
+
+#### 4. Gerenciamento da Continuidade do Serviços
+
+**Objetivos**
+Garantir que todo o aparato técnico de TI possa ser recuperado dentro dos prazos de negócio necessários e acordados (Estilo a disponibilidade/continuidade de *datacenters*)
+
+**Responsabilidade**
+Criar e manter o plano de continuidade da TI
